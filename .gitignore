@@ -1,0 +1,6 @@
+dependencies/
+.idea/
+Gemfile.lock
+*.html
+
+
