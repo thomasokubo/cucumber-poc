@@ -10,12 +10,12 @@ RUN apt-get update && \
      apt-get install -y openjdk-8-jre && \
      update-alternatives --config java && \
      apt-get clean
-
-
-RUN mkdir /data
+# Define mount points.
 VOLUME /data
+VOLUME /data/features/config
+VOLUME /data/features/resources
+# Define working directory
 WORKDIR /data
-
 COPY Gemfile /data
 
 RUN gem install bundler && \
@@ -25,15 +25,3 @@ RUN bundle install
 COPY . /data
 
 CMD "cucumber"
-
-
-
-
-
-
-
-
-
-
-
-
