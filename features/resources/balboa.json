@@ -1,0 +1,14 @@
+{
+  "first_name": "Rocky",
+  "last_name": "Balboa",
+  "nickname": "",
+  "age": 30,
+  "holds_title": false,
+  "winnings": 3,
+  "losses": 2,
+  "draws": 0,
+  "height": "1.85cm",
+  "weight": "85kg",
+  "weight_class": "heavy weight",
+  "summary": "Eyes of a tiger"
+}
