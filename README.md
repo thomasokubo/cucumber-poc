@@ -14,5 +14,5 @@ $ ./docker-run.sh
 To clean the docker instances and prune the images, run the following:
 
 ```sh
-$ ./docker-build.sh
+$ ./docker-clean.sh
 ```
