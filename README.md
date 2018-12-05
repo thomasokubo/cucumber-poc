@@ -4,5 +4,15 @@ A simple POC of acceptance test with Cucumber framework running in a Docker.
 
 ### How to run the tests locally
 
-1. Run `docker-build.sh`
-2. Run `docker-run.sh`
+You can run the tests using the following commands:
+
+```sh
+$ ./docker-build.sh
+$ ./docker-run.sh
+```
+
+To clean the docker instances and prune the images, run the following:
+
+```sh
+$ ./docker-clean.sh
+```
