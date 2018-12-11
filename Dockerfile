@@ -1,15 +1,5 @@
-FROM ruby:2.2
+FROM ruby:2.5.3-alpine3.8
 
-RUN apt-get update && \
-     apt-get upgrade -y && \
-     apt-get install -y libgmp3-dev && \
-     apt-get install -y ruby-dev && \
-     echo deb http://http.debian.net/debian jessie-backports main >> /etc/apt/sources.list && \
-     apt-get update && \
-     apt install -y -t jessie-backports  openjdk-8-jre-headless ca-certificates-java && \
-     apt-get install -y openjdk-8-jre && \
-     update-alternatives --config java && \
-     apt-get clean
 # Define mount points.
 VOLUME /data
 VOLUME /data/features/config
